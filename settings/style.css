@@ -1,0 +1,99 @@
+.settings-page {
+  padding: 60px 24px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.settings-container {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings-container h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: #4d8bff;
+}
+
+/* Form styling */
+.settings-form .form-group {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #4d8bff;
+  font-size: 16px;
+}
+
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form input[type="password"],
+.settings-form select {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.settings-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.settings-form input:focus,
+.settings-form select:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.save-btn {
+  padding: 14px 28px;
+  background-color: #4d8bff;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+  background-color: #336cd9;
+}
+
+.settings-form select {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.settings-form select option {
+  background-color: #222;
+  color: white;
+}
+
+.settings-form select:hover,
+.settings-form select:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}

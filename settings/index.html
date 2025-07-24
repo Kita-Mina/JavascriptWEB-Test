@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>設定 - Nexus Arcadia</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="main-header">
+    <a href="../index.html" class="header-title">Nexus Arcadia</a>
+
+    <div class="search-bar">
+      <input type="text" placeholder="何をお探しですか？" />
+      <button type="submit">検索</button>
+    </div>
+
+    <div class="dropdown">
+      <img src="../images/dropdown.jpg" alt="tab" class="dropdown-toggle" />
+      <ul class="dropdown-menu">
+        <li><a href="../profile/index.html">プロファイル</a></li>
+        <li><a href="../library/index.html">ライブラリ</a></li>
+        <li><a href="index.html">設定</a></li>
+        <li><a href="../logout/index.html">ログアウト</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="settings-page">
+    <div class="settings-container">
+      <h1>設定</h1>
+
+      <form class="settings-form">
+        <div class="form-group">
+          <label for="username">ユーザー名</label>
+          <input type="text" id="username" name="username" placeholder="表示名を入力" />
+        </div>
+
+        <div class="form-group">
+          <label for="language">言語</label>
+          <select id="language" name="language">
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+            <!-- add more if needed -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="theme">テーマ</label>
+          <select id="theme" name="theme">
+            <option value="light">ライトモード</option>
+            <option value="dark">ダークモード</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="notifications">通知設定</label>
+          <select id="notifications" name="notifications">
+            <option value="all">すべての通知を受け取る</option>
+            <option value="mentions">メンションのみ受け取る</option>
+            <option value="none">通知を受け取らない</option>
+          </select>
+        </div>
+
+        <button type="submit" class="save-btn">保存する</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    &copy; 2025 東京デザインテクノロジーセンター
+  </footer>
+
+</body>
+</html>

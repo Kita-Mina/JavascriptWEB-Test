@@ -153,14 +153,15 @@ body {
 .slider-section {
   width: 1200px;
   margin: 0 auto 60px auto;
-  overflow-x: auto;
-  padding-bottom: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
 .slider-track {
   display: flex;
   gap: 75px;
-  scroll-snap-type: x mandatory;
+  transition: transform 0.5s ease;
+  width: max-content;
 }
 
 .slider-box {
@@ -169,12 +170,12 @@ body {
   height: 600px;
   background-size: cover;
   background-position: center;
-  background-color: #e0e0e0;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-  scroll-snap-align: center;
+  cursor: pointer;
 }
+
+
 
 .slider-box:hover {
   transform: scale(1.02);
